@@ -11,7 +11,6 @@ sqldelight {
 }
 
 kotlin {
-    iosWorkaroundSupportArm64Simulator {}
 
     sourceSets {
         commonMain {
@@ -33,16 +32,5 @@ kotlin {
             }
         }
 
-        iosMain {
-            dependencies {
-                implementation(Deps.Squareup.SQLDelight.nativeDriver)
-            }
-        }
-
-        jsMain {
-            dependencies {
-                implementation(Deps.Squareup.SQLDelight.sqljsDriver)
-            }
-        }
     }
 }
