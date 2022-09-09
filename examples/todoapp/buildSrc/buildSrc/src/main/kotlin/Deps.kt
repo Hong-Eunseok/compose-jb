@@ -8,7 +8,7 @@ lateinit var properties: Map<String, *>
 object Deps {
     object JetBrains {
         object Kotlin {
-            private val VERSION get() = "1.6.10"// = properties["kotlin.version"]
+            private val VERSION get() = "1.6.10"
             val gradlePlugin get() = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VERSION"
             val testCommon get() = "org.jetbrains.kotlin:kotlin-test-common:$VERSION"
             val testJunit get() = "org.jetbrains.kotlin:kotlin-test-junit:$VERSION"
@@ -19,24 +19,6 @@ object Deps {
         object Compose {
             private val VERSION get() = "1.1.0"
             val gradlePlugin get() = "org.jetbrains.compose:compose-gradle-plugin:$VERSION"
-        }
-    }
-
-    object Android {
-        object Tools {
-            object Build {
-                const val gradlePlugin = "com.android.tools.build:gradle:7.0.4"
-            }
-        }
-    }
-
-    object AndroidX {
-        object AppCompat {
-            const val appCompat = "androidx.appcompat:appcompat:1.3.0"
-        }
-
-        object Activity {
-            const val activityCompose = "androidx.activity:activity-compose:1.3.0"
         }
     }
 
