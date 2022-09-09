@@ -5,7 +5,5 @@ include(
     ":common:edit",
     ":common:root",
     ":common:compose-ui",
-//    ":android",
     ":desktop",
-//    ":web"
 )
