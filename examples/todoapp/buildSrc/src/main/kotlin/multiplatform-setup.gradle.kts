@@ -6,7 +6,6 @@ initDeps(project)
 
 kotlin {
     jvm("desktop")
-    android()
 
 
     sourceSets {

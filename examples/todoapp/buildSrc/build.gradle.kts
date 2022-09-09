@@ -14,7 +14,6 @@ repositories {
 dependencies {
     implementation(Deps.JetBrains.Compose.gradlePlugin)
     implementation(Deps.JetBrains.Kotlin.gradlePlugin)
-    implementation(Deps.Android.Tools.Build.gradlePlugin)
     implementation(Deps.Squareup.SQLDelight.gradlePlugin)
 }
 

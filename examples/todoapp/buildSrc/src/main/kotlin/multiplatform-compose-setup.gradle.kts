@@ -1,7 +1,6 @@
 import org.jetbrains.compose.compose
 
 plugins {
-    id("com.android.library")
     id("kotlin-multiplatform")
     id("org.jetbrains.compose")
 }
@@ -10,7 +9,6 @@ initDeps(project)
 
 kotlin {
     jvm("desktop")
-    android()
 
     sourceSets {
         named("commonMain") {
