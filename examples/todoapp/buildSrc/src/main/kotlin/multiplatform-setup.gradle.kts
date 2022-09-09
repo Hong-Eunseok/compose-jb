@@ -1,5 +1,4 @@
 plugins {
-    id("com.android.library")
     id("kotlin-multiplatform")
 }
 
@@ -7,11 +6,6 @@ initDeps(project)
 
 kotlin {
     jvm("desktop")
-    android()
-
-    js(IR) {
-        browser()
-    }
 
     sourceSets {
         named("commonTest") {
@@ -21,19 +15,9 @@ kotlin {
             }
         }
 
-        named("androidTest") {
-            dependencies {
-                implementation(Deps.JetBrains.Kotlin.testJunit)
-            }
-        }
         named("desktopTest") {
             dependencies {
                 implementation(Deps.JetBrains.Kotlin.testJunit)
-            }
-        }
-        named("jsTest") {
-            dependencies {
-                implementation(Deps.JetBrains.Kotlin.testJs)
             }
         }
     }
