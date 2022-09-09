@@ -2,8 +2,6 @@ plugins {
     id("kotlin-multiplatform")
 }
 
-initDeps(project)
-
 kotlin {
     jvm("desktop")
 

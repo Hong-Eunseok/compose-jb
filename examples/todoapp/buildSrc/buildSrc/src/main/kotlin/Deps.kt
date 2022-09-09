@@ -5,14 +5,10 @@ import org.gradle.api.Project
 
 lateinit var properties: Map<String, *>
 
-fun initDeps(project: Project) {
-    properties = project.properties
-}
-
 object Deps {
     object JetBrains {
         object Kotlin {
-            private val VERSION get() = properties["kotlin.version"]
+            private val VERSION get() = "1.6.10"// = properties["kotlin.version"]
             val gradlePlugin get() = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VERSION"
             val testCommon get() = "org.jetbrains.kotlin:kotlin-test-common:$VERSION"
             val testJunit get() = "org.jetbrains.kotlin:kotlin-test-junit:$VERSION"
@@ -21,7 +17,7 @@ object Deps {
         }
 
         object Compose {
-            private val VERSION get() = properties["compose.version"]
+            private val VERSION get() = "1.1.0"
             val gradlePlugin get() = "org.jetbrains.compose:compose-gradle-plugin:$VERSION"
         }
     }

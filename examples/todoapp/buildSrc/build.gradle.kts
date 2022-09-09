@@ -2,8 +2,6 @@ plugins {
     `kotlin-dsl`
 }
 
-initDeps(project)
-
 repositories {
     mavenLocal()
     google()
